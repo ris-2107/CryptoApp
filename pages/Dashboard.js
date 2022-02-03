@@ -1,8 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import Header from '../Components/Header';
+import React, {useEffect, useState} from 'react';
+import Header from '../Components/Header';
 import styled from 'styled-components'
 import Main from '../Components/Main'; 
-import Sidebar from '../Components/Sidebar'
+import Sidebar from '../Components/Sidebar';
+import {ethers} from 'ethers';
+import { ThirdwebSDK } from '@3rdweb/sdk'; 
+
+
+const sdk = new ThirdwebSDK(
+  new ethers.Wallet( 
+    process.env.NEXT_PUBLIC_METAMASK_KEY,
+    ethers.getDefaultProvider('https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161')
+  ));
 
   
 function Dashboard({address}) {
@@ -30,7 +41,7 @@ function Dashboard({address}) {
     }
 
      //setInterval(setThirdWebTokens, 2998);
-     setInterval(getSanityAndThirdWebTokens(), 3778)
+     //setInterval(getSanityAndThirdWebTokens(), 3778)
 
     return getSanityAndThirdWebTokens() ;
     
@@ -38,7 +49,7 @@ function Dashboard({address}) {
 
 
   
-  setInterval((console.log(thirdWebTokens, "3rd-webtokens")),1213)
+  console.log(thirdWebTokens, "3rd-webtokens")
   
 //   const initialiser=()=>{
 //     console.log(thirdWebTokens, "3rd-webtokens") 
