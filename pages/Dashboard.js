@@ -18,8 +18,8 @@ function Dashboard({address}) {
 
 
 
-  const[sanityTokens, setSanityTokens] = useState(sanityTokens[0])
-  const[thirdWebTokens, setThirdWebTokens] = useState(thirdWebTokens[0])
+  const[sanityTokens, setSanityTokens] = useState([])
+  const[thirdWebTokens, setThirdWebTokens] = useState([])
 
 
   
