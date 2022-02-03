@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Header from '../Components/Header';
-import React, {useEffect, useState} from 'react';
-import Header from '../Components/Header';
 import styled from 'styled-components'
 import Main from '../Components/Main'; 
 import Sidebar from '../Components/Sidebar';
