@@ -8,12 +8,27 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.8",
+    "@3rdweb/hooks": "^1.8.0",
+    "@3rdweb/react": "^1.8.1",
+    "@3rdweb/sdk": "^1.36.10",
+    "@sanity/client": "^2.23.2",
+    "@sanity/image-url": "^1.0.1",
+    "ethers": "^5.5.3",
+    "next": "^10.0.1",
+    "next-images": "^1.8.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-chartjs-2": "^4.0.1",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-loader-spinner": "^5.1.0",
+    "react-modal": "^3.14.4",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.8",
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "^0.2.4",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
