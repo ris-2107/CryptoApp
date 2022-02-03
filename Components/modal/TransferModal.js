@@ -10,7 +10,7 @@ const TransferModal = ({sanityTokens, thirdWebTokens, walletAddress }) => {
 
     const [action, setAction] = useState('send')
     const [selectedToken, setSelectedToken] = useState(sanityTokens[0])
-    console.log(sanityTokens,"From->TransferModal")
+    //console.log(sanityTokens,"From->TransferModal")
 
 
     const selectedStyle = {

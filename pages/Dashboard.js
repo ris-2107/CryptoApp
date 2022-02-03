@@ -38,10 +38,12 @@ function Dashboard({address}) {
 
 
   
-    const initialiser=()=>{
-    console.log(thirdWebTokens, "3rd-webtokens")
-   }  
-   setInterval(initialiser(), 22007) 
+  console.log(thirdWebTokens, "3rd-webtokens") 
+  
+  // const initialiser=()=>{
+   
+  //  }  
+  //  setInterval(initialiser(), 22007) 
 
    return(
     <Wrapper>
