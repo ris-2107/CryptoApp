@@ -40,10 +40,10 @@ function Dashboard({address}) {
   
   console.log(thirdWebTokens, "3rd-webtokens") 
   
-  // const initialiser=()=>{
-   
-  //  }  
-  //  setInterval(initialiser(), 22007) 
+  const initialiser=()=>{
+    console.log(thirdWebTokens, "3rd-webtokens") 
+   }  
+    setInterval(initialiser(), 22007) 
 
    return(
     <Wrapper>
