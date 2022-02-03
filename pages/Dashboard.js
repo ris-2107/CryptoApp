@@ -29,7 +29,7 @@ function Dashboard({address}) {
           
     }
 
-     //setInterval(setThirdWebTokens, 2998);
+     setInterval(setThirdWebTokens, 2998);
      //setInterval(getSanityAndThirdWebTokens(), 3778)
 
     return getSanityAndThirdWebTokens() ;
@@ -43,7 +43,7 @@ function Dashboard({address}) {
   const initialiser=()=>{
     console.log(thirdWebTokens, "3rd-webtokens") 
    }  
-    setInterval(initialiser(), 22007) 
+    setInterval(initialiser(), 2207) 
 
    return(
     <Wrapper>
