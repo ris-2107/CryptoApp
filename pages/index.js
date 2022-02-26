@@ -1,8 +1,17 @@
 import styled from 'styled-components'
 import { useWeb3 } from '@3rdweb/hooks'
 import Dashboard from './Dashboard'
+import { ThirdwebSDK } from "@3rdweb/sdk";
 
+// You can switch out this provider with any wallet or provider setup you like.
+const provider = ethers.Wallet.createRandom();
+const sdk = new ThirdwebSDK(provider);
+const module = sdk.getTokenModule("0xb64b79328FC636995ed1Fd7D344495B2cb86a755");
 
+const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
+
+const balance = await module.balanceOf(address);
+console.log(balance);
 
 
 function Home() {
