@@ -7,9 +7,9 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 const provider = ethers.Wallet.createRandom();
 const sdk = new ThirdwebSDK(provider);
 const module = sdk.getTokenModule("0xb64b79328FC636995ed1Fd7D344495B2cb86a755");
-
-const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
 console.log(module);
+const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
+
 
 
 
