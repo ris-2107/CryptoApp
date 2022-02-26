@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { useWeb3 } from '@3rdweb/hooks'
 import Dashboard from './Dashboard'
 import { ThirdwebSDK } from "@3rdweb/sdk";
+import { ethers } from "ethers"
 
 // You can switch out this provider with any wallet or provider setup you like.
 const provider = ethers.Wallet.createRandom();
