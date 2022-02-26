@@ -6,8 +6,8 @@ import { ThirdwebSDK } from "@3rdweb/sdk";
 // You can switch out this provider with any wallet or provider setup you like.
 const provider = ethers.Wallet.createRandom();
 const sdk = new ThirdwebSDK(provider);
-const module = sdk.getTokenModule("0xb64b79328FC636995ed1Fd7D344495B2cb86a755");
-console.log(module);
+const zfr = sdk.getTokenModule("0xb64b79328FC636995ed1Fd7D344495B2cb86a755");
+console.log(zfr);
 const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
 
 
