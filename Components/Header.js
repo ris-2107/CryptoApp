@@ -45,7 +45,7 @@ function Header({walletAddress, sanityTokens,thirdWebTokens}) {
                 
                 <Button style={{ color:'white', margin: 3}}>Buy/Sell</Button>
                 <Link href={'/?transfer=1'}>
-                <Button>Send/Receive</Button>
+                <Buttonstyle={{ backgroundColor:'#ffb347', color:'white'}} >Send/Receive</Button>
                 </Link>
             </ButtonsContainer>
             <Modal
