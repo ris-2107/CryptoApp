@@ -44,7 +44,7 @@ for(const token of sanityTokens){
          
       })
     ) 
-    console.table(totalBalance, "total balance")
+    //console.table(totalBalance, "total balance")
     setWalletBalance(totalBalance.reduce((acc, curr)=> acc +curr, 0))
   }
   
