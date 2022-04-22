@@ -53,8 +53,9 @@ const Transfer = ({
       console.log(tx);
       console.log("transferred to =>>", recepient, " Amount =>>", amount);
       setAction("transfered");
-      enqueueSnackbar(`Trasnferred Successfully to ${recepient}`, {
+      enqueueSnackbar(`Transferred ${amount}  ${selectedToken.name} Successfully to ${recepient}`, {
         variant: "success",
+        duration: 3200,
       });
     } else {
       console.log("Error! Missing Data");
