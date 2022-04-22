@@ -42,7 +42,10 @@ const Transfer = ({
   }, [activeThirdWebToken]);
 
   const sendCrypto = async (amount, recepient) => {
-    console.log("Sending Crypto...");
+    enqueueSnackbar(`Transferring ${selectedToken.name} ...`, {
+      variant: "info",
+      duration: 2900,
+    });
 
     if (activeThirdWebToken && amount && recepient) {
       setAction("transferring");
@@ -60,7 +63,7 @@ const Transfer = ({
         )}...${recepient.slice(33)}`,
         {
           variant: "success",
-          duration: 3200,
+          duration: 6500,
         }
       );
     } else {
