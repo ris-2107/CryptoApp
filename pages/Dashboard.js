@@ -38,21 +38,10 @@ function Dashboard({address}) {
           
     }
 
-     //setInterval(setThirdWebTokens, 2998);
-     //setInterval(getSanityAndThirdWebTokens(), 3778)
-
     return getSanityAndThirdWebTokens() ;
     
   })
 
-
-  
-  //console.log(thirdWebTokens, "3rd-webtokens")
-  
-//   const initialiser=()=>{
-//     console.log(thirdWebTokens, "3rd-webtokens") 
-//    }  
-//     setInterval(initialiser(), 2207) 
 
    return(
     <Wrapper>
