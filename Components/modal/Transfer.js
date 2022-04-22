@@ -55,7 +55,7 @@ const Transfer = ({
       setAction("transfered");
       enqueueSnackbar(`Transferred ${selectedToken.name} Successfully to ${recepient}`, {
         variant: "success",
-        duration: 3500,
+        duration: 5500,
       });
     } else {
       console.log("Error! Missing Data");
