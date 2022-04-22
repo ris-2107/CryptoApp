@@ -54,12 +54,12 @@ for(const token of sanityTokens){
   
   
 
-  var baln = 34056;
-  function increment() {
-    baln=baln+334;
-    {walletBalance.toLocaleString()}
-  } 
-  setInterval(increment, 988709);
+ // var baln = 34056;
+  // function increment() {
+  //   baln=baln+334;
+  //   {walletBalance.toLocaleString()}
+  // } 
+  // setInterval(increment, 988709);
 
   return (
   <Wrapper>
