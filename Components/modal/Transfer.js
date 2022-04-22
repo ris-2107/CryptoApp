@@ -12,7 +12,7 @@ const Transfer = ({
   walletAddress,
 }) => {
   const { enqueueSnackbar } = useSnackbar();
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState();
   const [recepient, setRecepient] = useState("");
   const [imageUrl, setImageUrl] = useState(null);
   const [activeThirdWebToken, setActiveThirdWebToken] = useState();
