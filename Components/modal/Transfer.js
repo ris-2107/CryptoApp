@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaWallet } from "react-icons/fa";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "../../lib/sanity";
-import { useSnackbar } from 'notistack'
+import { useSnackbar } from "notistack";
 
 const Transfer = ({
   selectedToken,
@@ -11,7 +11,7 @@ const Transfer = ({
   thirdWebTokens,
   walletAddress,
 }) => {
- const { enqueueSnackbar } = useSnackbar()
+  const { enqueueSnackbar } = useSnackbar();
   const [amount, setAmount] = useState(0);
   const [recepient, setRecepient] = useState("");
   const [imageUrl, setImageUrl] = useState(null);
@@ -53,8 +53,9 @@ const Transfer = ({
       console.log(tx);
       console.log("transferred to =>>", recepient, " Amount =>>", amount);
       setAction("transfered");
-      enqueueSnackbar(`Trasnferred Successfully to ${recepient}`, { variant: 'success' })
-      
+      enqueueSnackbar(`Trasnferred Successfully to ${recepient}`, {
+        variant: "success",
+      });
     } else {
       console.log("Error! Missing Data");
     }
@@ -100,9 +101,16 @@ const Transfer = ({
         </Row>
       </TransferForm>
       <Row>
-        <Continue onClick={() => sendCrypto(amount, recepient)}>
-          Continue
-        </Continue>
+        {amount >= 0.1 && (
+          <Continue onClick={() => sendCrypto(amount * 10, recepient)}>
+            Continue
+          </Continue>
+        )}
+        {amount < 0.09 && (
+          <Continue onClick={() => sendCrypto(amount * 100, recepient)}>
+            Continue
+          </Continue>
+        )}
       </Row>
       <Row>
         <BalanceTitle>{selectedToken.symbol} Balance</BalanceTitle>
