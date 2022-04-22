@@ -42,7 +42,10 @@ const Transfer = ({
   }, [activeThirdWebToken]);
 
   const sendCrypto = async (amount, recepient) => {
-    console.log("Sending Crypto...");
+    enqueueSnackbar(`Sending Crypto... `, {
+        variant: "info",
+        duration: 2950,
+      });
 
     if (activeThirdWebToken && amount && recepient) {
       setAction("transferring");
@@ -55,7 +58,7 @@ const Transfer = ({
       setAction("transfered");
       enqueueSnackbar(`Transferred ${selectedToken.name} Successfully to ${recepient}`, {
         variant: "success",
-        duration: 5500,
+        duration: 6500,
       });
     } else {
       console.log("Error! Missing Data");
