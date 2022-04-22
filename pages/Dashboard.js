@@ -43,7 +43,7 @@ function Dashboard({address}) {
 
     return getSanityAndThirdWebTokens() ;
     
-  }, [])
+  })
 
 
   
