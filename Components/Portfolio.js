@@ -33,7 +33,6 @@ for(const token of sanityTokens){
    tokenToUSD[token.contractAddress] = Number(token.usdPrice)
 }
 
- //console.table(tokenToUSD)
 
  useEffect(() => {
   const calculateTotalBalance = async () => {
@@ -44,7 +43,7 @@ for(const token of sanityTokens){
          
       })
     ) 
-    //console.table(totalBalance, "total balance")
+    
     setWalletBalance(totalBalance.reduce((acc, curr)=> acc +curr, 0))
   }
   
