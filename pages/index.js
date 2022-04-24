@@ -9,11 +9,11 @@ const provider = ethers.Wallet.createRandom();
 const sdk = new ThirdwebSDK(provider);
 const zfr = sdk.getTokenModule("0xb64b79328FC636995ed1Fd7D344495B2cb86a755");
 //console.log("token Module=>",zfr);
-const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
+//const address = "0x6b9dCfF96BF81a8c111A01C24839c7d53120AdFb";
 
-if(zfr){
-  const bl= zfr.balanceOf(address)
-  console.log(bl)}
+// if(zfr){
+//   const bl= zfr.balanceOf(address)
+//   console.log(bl)}
 
 
 

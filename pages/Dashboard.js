@@ -34,8 +34,6 @@ function Dashboard({address}) {
         setThirdWebTokens(
           sanityTokens.map( token => sdk.getTokenModule(token.contractAddress))
           )  
-         
-          
     }
 
     return getSanityAndThirdWebTokens() ;
