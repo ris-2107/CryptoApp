@@ -16,13 +16,10 @@ const sdk = new ThirdwebSDK(
   
 function Dashboard({address}) {
 
-
-
   const[sanityTokens, setSanityTokens] = useState([])
   const[thirdWebTokens, setThirdWebTokens] = useState([])
 
-
-  
+ 
   useEffect(() => {
     
     const getSanityAndThirdWebTokens = async() => {
@@ -38,7 +35,7 @@ function Dashboard({address}) {
 
     return getSanityAndThirdWebTokens() ;
     
-  },[coins,SanityTokens,sanityTokens,thirdWebTokens])
+  },[sanityTokens,thirdWebTokens])
 
 
    return(
