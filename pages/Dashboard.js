@@ -24,13 +24,13 @@ function Dashboard({address}) {
     
     const getSanityAndThirdWebTokens = async() => {
         const coins = await fetch("https://msw1hav9.api.sanity.io/v1/data/query/production?query=*%5B_type%3D%3D'coins'%5D%20%7B%0A%20%20name%2C%0A%20%20usdPrice%2C%0A%20%20contractAddress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%7D")
+        console.log(coins)
         const SanityTokens = (await coins.json()).result 
         setSanityTokens(SanityTokens)
-
-
         setThirdWebTokens(
           sanityTokens.map( token => sdk.getTokenModule(token.contractAddress))
           )  
+          console.log(thirdWebTokens,sanityTokens)
     }
 
     return getSanityAndThirdWebTokens() ;
