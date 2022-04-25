@@ -32,7 +32,7 @@ function Dashboard({address}) {
 
 
         setThirdWebTokens(
-          sanityTokens.map( token => await sdk.getTokenModule(token.contractAddress))
+          sanityTokens.map( token => sdk.getTokenModule(token.contractAddress))
           )  
     }
 
