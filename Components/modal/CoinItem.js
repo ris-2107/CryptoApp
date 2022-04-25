@@ -45,7 +45,7 @@ const CoinItem = ({
         getImageUrl()
         getBalance()
 
-    },[])
+    },[balance,imageUrl])
 
 
   return (<Wrapper
