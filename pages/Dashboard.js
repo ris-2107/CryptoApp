@@ -35,7 +35,7 @@ function Dashboard({address}) {
 
     return getSanityAndThirdWebTokens() ;
     
-  },[sanityTokens,thirdWebTokens])
+  },[])
 
 
    return(
